@@ -115,3 +115,123 @@ body
 {
 	opacity: 0.5;
 }
+@media only screen and (max-width: 600px) {
+	.square
+{
+	width: 9.5vw;
+	background-color: black;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	float: left;
+	border-radius: 10px;
+	margin: 1px 1px 1px 1px;
+	color: green;
+	font-size: 50px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	white-space: nowrap;
+
+
+
+
+
+}
+.container
+{	
+
+	
+	margin: auto;
+	
+	
+	overflow: hidden;
+	visibility: hidden;
+	
+
+}
+body
+{
+	background-image: url("https://www.elsetge.cat/myimg/f/157-1571677_best-websites-for-wallpapers-high-resolution-poster-background.jpg");
+	color: white;
+	font-size:20px;
+}
+#marquee
+{	width:50vw;
+	position: relative;
+	overflow: hidden;
+	
+}
+.marqueecontent1
+{	
+	
+	animation: l 10s linear infinite;
+	height: 100%;
+	display: flex;
+
+	
+}
+.marqueecontent2
+{
+	animation: r 10s linear infinite;
+	height: 100%;
+	display: flex;
+}
+
+@keyframes l{
+
+	0% {transform: translateX(0vw);}
+	100% {transform: translateX(-27.5vw);}
+}
+
+@keyframes r{
+	0% {transform: translateX(-27.5vw);}
+	100% {transform: translateX(0vw);}
+}
+.easy
+{
+	font-size:50px;
+}
+.besttimeH
+{
+	padding-left:70px;
+}
+.hbt
+{
+	padding-left:45px;
+}
+.time
+{
+	padding-left:40px;
+}
+#timer
+{
+	padding-left:20px;
+}
+.beginning
+{
+	text-align:center;
+	margin-top:40px;
+}
+.ng
+{
+	text-align:center;
+	margin-top:40px;
+}
+.hard
+{
+	padding-left:50px;
+	font-size:50px;
+}
+#countdown
+{
+	text-align:center;
+	font-size:60px;
+}
+.square:hover
+{
+	opacity: 0.5;
+}
+  
+}
