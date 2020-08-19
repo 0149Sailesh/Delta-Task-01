@@ -1,121 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="cb.css">
+	<title>MS PAINT</title>
+	<link rel="stylesheet" href="Paint.css">
 </head>
 <body>
-	<audio class="correct">
-		
-		<source src="correct.mp3" type="audio/mpeg">
-	</audio>
-	<audio class="wrong">
-		
-		<source src="wrong.mp3" type="audio/mpeg" >
-	</audio>
-  
-  
-	<div>
-	<span class="besttime">BEST TIME</span>
-	<SPAN class="time">TIME</SPAN>
-	<span class="besttimeH">BEST TIME</span></div>
-	
-	<div>
-	<span class="bt">00 : 00 . 000</span>
-	<span id ="timer">00 : 00 . 000</span>
-	<span class="hbt">00 : 00.000</span></div>
-	<div class="ng">NEW GAME</div>
-	<div class="beginning"><span class="easy">EASY</span>
-	<span class="hard">HARD</span></div>
-	<div id ="countdown"></div>
-	<div class="container" id="marquee">
-		<div class="marqueecontent1">
+	<div class="toolbox left">
+		<div class="group shapes">
 			
-		<div class="square" id="easysquare" onclick="myFunction(0)">5</div>
-		<div class="square" id="easysquare" onclick="myFunction(1)">16</div>
-		<div class="square" id="easysquare" onclick="myFunction(2)">2</div>
-		<div class="square" id="easysquare" onclick="myFunction(3)">10</div>
-		<div class="square" id="easysquare" onclick="myFunction(4)">13</div>
-		<div class="square" id="easysquare" onclick="myFunction(5)">5</div>
-		<div class="square" id="easysquare" onclick="myFunction(6)">16</div>
-		<div class="square" id="easysquare" onclick="myFunction(7)">2</div>
-		<div class="square" id="easysquare" onclick="myFunction(8)">10</div>
-		<div class="square" id="easysquare" onclick="myFunction(9)">13</div>
-		</div>
-		<div class="marqueecontent2">
-		<div class="square" id="easysquare" onclick="myFunction(10)">8</div>
-		<div class="square" id="easysquare" onclick="myFunction(11)">18</div>
-		<div class="square" id="easysquare" onclick="myFunction(12)">4</div>
-		<div class="square" id="easysquare" onclick="myFunction(13)">6</div>
-		<div class="square" id="easysquare" onclick="myFunction(14)">7</div>
-		<div class="square" id="easysquare" onclick="myFunction(15)">8</div>
-		<div class="square" id="easysquare" onclick="myFunction(16)">18</div>
-		<div class="square" id="easysquare" onclick="myFunction(17)">4</div>
-		<div class="square" id="easysquare" onclick="myFunction(18)">6</div>
-		<div class="square" id="easysquare" onclick="myFunction(19)">7</div>
-		</div>
-		<div class="marqueecontent1">
-		<div class="square" id="easysquare" onclick="myFunction(20)">12</div>
-		<div class="square" id="easysquare" onclick="myFunction(21)">19</div>
-		<div class="square" id="easysquare" onclick="myFunction(22)">1</div>
-		<div class="square" id="easysquare" onclick="myFunction(23)">9</div>
-		<div class="square" id="easysquare" onclick="myFunction(24)">20</div>
-		<div class="square" id="easysquare" onclick="myFunction(25)">12</div>
-		<div class="square" id="easysquare" onclick="myFunction(26)">19</div>
-		<div class="square" id="easysquare" onclick="myFunction(27)">1</div>
-		<div class="square" id="easysquare" onclick="myFunction(28)">9</div>
-		<div class="square" id="easysquare" onclick="myFunction(29)">20</div>
-		</div>
-		<div class="marqueecontent2">
-		<div class="square" id="easysquare" onclick="myFunction(30)">11</div>
-		<div class="square" id="easysquare" onclick="myFunction(31)">15</div>
-		<div class="square" id="easysquare" onclick="myFunction(32)">14</div>
-		<div class="square" id="easysquare" onclick="myFunction(33)">17</div>
-		<div class="square" id="easysquare" onclick="myFunction(34)">3</div>
-		<div class="square" id="easysquare" onclick="myFunction(35)">11</div>
-		<div class="square" id="easysquare" onclick="myFunction(36)">15</div>
-		<div class="square" id="easysquare" onclick="myFunction(37)">14</div>
-		<div class="square" id="easysquare" onclick="myFunction(38)">17</div>
-		<div class="square" id="easysquare" onclick="myFunction(39)">3</div>
-		</div>
-		<div class="marqueecontent1">
-		<div class="square" id="hidetile" onclick="myFunction(40)">21</div>
-		<div class="square" id="hidetile" onclick="myFunction(41)">23</div>
-		<div class="square" id="hidetile" onclick="myFunction(42)">22</div>
-		<div class="square" id="hidetile" onclick="myFunction(43)">24</div>
-		<div class="square" id="hidetile" onclick="myFunction(44)">25</div>
-		<div class="square" id="hidetile" onclick="myFunction(45)">21</div>
-		<div class="square" id="hidetile" onclick="myFunction(46)">23</div>
-		<div class="square" id="hidetile" onclick="myFunction(47)">22</div>
-		<div class="square" id="hidetile" onclick="myFunction(48)">24</div>
-		<div class="square" id="hidetile" onclick="myFunction(49)">25</div>
 		</div>
 		
+
+		<div class="group tools">
+			
+		 <div class="item active" data-tool="line" title="Line Tool">
+                    <img src="line-icon.png">
+                </div>
+                <div class="item" data-tool="rectangle" title="Rectangle Tool">
+                    <img src="rect-icon.png">
+                </div>
+                <div class="item" data-tool="circle" title="Circle Tool">
+                    <img src="circle-icon.png">
+                </div>
+                
+		</div>
+		<div class="group tools">;
+			<div class="item" data-tool="pencil" title="Pencil Tool">
+                        <img src="pencil-icon.png">
+            </div>
+            <div class="item" data-tool="eraser" title="Eraser Tool">
+                        <img src="eraser-icon.png">
+                </div>
+            </div>
 	</div>
-	
-	<ol class="easyscore">HIGH SCORE(EASY)
-		<li class="enter"></li>
-		<li class="enter"></li>
-		<li class="enter"></li>
-		<li class="enter"></li>
-		<li class="enter"></li>
-		
-	</ol>
-	<ol class="hardscore">HIGH SCORE(HARD)
-		<li class="exit"></li>
-		<li class="exit"></li>
-		<li class="exit"></li>
-		<li class="exit"></li>
-		<li class="exit"></li>
-	
-
-		
-	</ol>
-	<script type="text/javascript" src="stopwatch.js"></script>	
-	<script type="text/javascript" src="cb.js"></script>
-
-	
-	
-	
+	<canvas id="canvas" width="650" height="480"></canvas>
+	<div class="toolbox right">
+		<div class="group colors">
+                <div class="item active" data-color="#000000">
+                    <div class="swatch" style="background-color:#000000;"></div>
+                </div>
+                <div class="item" data-color="#ff0000">
+                    <div class="swatch" style="background-color:#ff0000;"></div>
+                </div>
+                <div class="item" data-color="#00ff00">
+                    <div class="swatch" style="background-color:#00ff00;"></div>
+                </div>
+                <div class="item" data-color="#0000ff">
+                    <div class="swatch" style="background-color:#0000ff;"></div>
+                </div>
+                <div class="item" data-color="#00ffff">
+                    <div class="swatch" style="background-color:#00ffff;"></div>
+                </div>
+                <div class="item" data-color="#ff00ff">
+                    <div class="swatch" style="background-color:#ff00ff;"></div>
+                </div>
+                <div class="item" data-color="#ffff00">
+                    <div class="swatch" style="background-color:#ffff00;"></div>
+                </div>
+                <div class="item" data-color="#c46f0f">
+                    <div class="swatch" style="background-color:#c46f0f;"></div>
+                </div>
+                <div class="item" data-color="#fd8f27">
+                    <div class="swatch" style="background-color:#fd8f27;"></div>
+                </div>
+            </div>
+	</div>
+    <script type="text/javascript" src="Paint.js"></script>
+    <script>
+        console.log("Hi");
+    </script>
 </body>
 </html>
